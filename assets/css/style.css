@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: RalewayRegular;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: RalewayBold;
+    src: url('../fonts/Raleway-Bold.ttf');
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: RalewayRegular;
+}
+.id_card {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+.id_card .qrcode {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.id_card .top {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px;
+    background: #018D82;
+    position: relative;
+}
+
+.id_card .top .title{
+    padding-left: 20px;
+    color: #fff;
+}
+.id_card .top .title h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+}
+.id_card .top .title p{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 1px 0 0 0;
+    margin: 0;
+}
+.id_card .bottom {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.id_card .bottom .photo {
+    background-color: #018D82;
+    padding: 20px;
+}
+
+.id_card .bottom .photo img {
+    border: 10px solid #fff;
+}
+.id_card .bottom .photo h2 {
+    font-family: Roboto ;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+.id_card .bottom .photo p {
+    font-family: RalewayRegular ;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.id_card .bottom .details {
+    padding-left: 20px;
+}
+
+.id_card .bottom .details h2 {
+    font-family: RalewayBold;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+.id_card .bottom .details table {
+    font-family: Roboto;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.id_card .bottom .details .qrcode1 {
+    display: none;
+}
+
+.id_card .bottom .details table tr td:first-child {
+    width: 30%;
+}
+.id_card .bottom .details table tr td:nth-child(2) {
+    width: 1%;
+    padding: 0;
+}
+
+.id_card .bottom .details table tr td:last-child {
+    width:50%;
+}
+
+
+.id_card .bottom .details table tr td {
+    padding: 5px 10px;
+}
+
+
+@media screen and (max-width:991px){
+    .id_card {
+        width: 100%;
+    }
+    .id_card .top { 
+        flex-direction: column;
+        text-align: center;
+    }
+    .id_card .top {
+        padding: 10px 0;
+    }
+    .id_card .bottom {
+        flex-direction: column;
+    }
+    .id_card .bottom .photo {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .id_card .bottom .details {
+        padding-left: 0;
+        position: relative;
+        padding: 20px 20px 0 20px;
+    }
+    .id_card .bottom .details .qrcode1 {
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 0;
+    }
+    .id_card .qrcode {
+        display: none;
+    }
+    .id_card .bottom .details table tr td:last-child {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .id_card .bottom .details .qrcode1 {
+        display: none;
+    }
+    .id_card .qrcode {
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+    }
+}
+
+
+
+/* ID card 2 */
+.id_card2 .custom-shape-divider-bottom-1643875331 {
+    position: absolute;
+    bottom: -1px;
+    left: 1px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.id_card2 .custom-shape-divider-bottom-1643875331 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 61px;
+    transform: rotateY(180deg);
+}
+
+.id_card2 .custom-shape-divider-bottom-1643875331 .shape-fill {
+    fill: #FFFFFF;
+}
+.id_card2 {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+.id_card2 .qrcode {
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
+    z-index: 99;
+}
+.id_card2 .line {
+    width: 100%;
+    height: 7px;
+    background-color: #018D82;
+    transform: skew(0,-3.3deg);
+    margin-top: -27px;
+    margin-bottom: 33px;
+}
+.id_card2 .top {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px 38px ;
+    background: #018D82;
+    position: relative;
+}
+
+.id_card2 .top .title{
+    padding-left: 20px;
+    color: #fff;
+}
+.id_card2 .top .title h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+}
+.id_card2 .top .title p{
+    width: 78%;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 1px 0 0 0;
+    margin: 0;
+}
+.id_card2 .bottom {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.id_card2 .bottom .photo {
+    padding-right: 40px;
+}
+
+.id_card2 .bottom .photo img {
+}
+.id_card2 .bottom .photo h2 {
+    font-family: Roboto ;
+    color: #000;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+.id_card2 .bottom .photo p {
+    font-family: RalewayRegular ;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.id_card2 .bottom .details {
+    padding-left: 20px;
+}
+
+.id_card2 .bottom .details h2 {
+    font-family: RalewayBold;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 30px 0 10px 0;
+    margin: 0;
+}
+
+.id_card2 .bottom .details table {
+    font-family: Roboto;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.id_card2 .bottom .details .qrcode1 {
+    display: none;
+}
+
+.id_card2 .bottom .details table tr td:first-child {
+    width: 30%;
+}
+.id_card2 .bottom .details table tr td:nth-child(2) {
+    width: 1%;
+    padding: 0;
+}
+
+.id_card2 .bottom .details table tr td:last-child {
+    width:50%;
+}
+
+
+.id_card2 .bottom .details table tr td {
+    padding: 8px 10px;
+}
+.id_card2 .qrcode3 {
+    display: none;
+}
+
+@media screen and (max-width:991px){
+    .id_card2 {
+        width: 100%;
+    }
+    .id_card2 .top { 
+        flex-direction: column;
+        text-align: center;
+    }
+    .id_card2 .top {
+        padding: 10px 0;
+    }
+    .id_card2 .bottom {
+        flex-direction: column-reverse;
+    }
+    .id_card2 .bottom .photo {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .id_card2 .bottom .details {
+        padding-left: 0;
+        margin: 0 auto;
+        position: relative;
+        padding: 20px 20px 0 20px;
+    }
+    .id_card2 .bottom .details .qrcode1 {
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 0;
+    }
+    .id_card2 .qrcode {
+        display: none;
+    }
+
+    .id_card2 .bottom .details table tr td:last-child {
+        width: 100%;
+    }
+    .id_card2 .custom-shape-divider-bottom-1643875331{
+        display: none;
+    }
+    .id_card2 .line{
+        display: none;
+    }
+    .id_card2 .top .title p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .id_card2 .bottom .details .qrcode1 {
+        display: none;
+    }
+    .id_card2 .qrcode3 {
+        display: block;
+        padding: 10px 20px;
+    }
+    .id_card2 .bottom .details h2{
+        text-align: center;
+    }
+}
